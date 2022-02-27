@@ -41,7 +41,6 @@ $rules = [
             'extra',
             'throw',
             'use',
-            'use_trait',
         ],
     ],
     'no_blank_lines_after_class_opening' => true,
@@ -130,6 +129,7 @@ $rules = [
             'const' => 'one',
             'method' => 'one',
             'property' => 'one',
+            'trait_import' => 'none',
         ],
     ],
     'class_definition' => [
@@ -165,8 +165,8 @@ $finder = Finder::create()
     ->ignoreDotFiles(true)
     ->ignoreVCS(true);
 
-return Config::create()
-    ->setFinder($finder)
+$config = new Config();
+return $config->setFinder($finder)
     ->setRules($rules)
     ->setRiskyAllowed(true)
     ->setUsingCache(false);

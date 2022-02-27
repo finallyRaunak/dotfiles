@@ -14,12 +14,12 @@ module.exports = {
         'plugin:@typescript-eslint/recommended', // Uses the recommended rules from the @typescript-eslint/eslint-plugin
     ],
     ignorePatterns: [
+        // List of all the dir which you want eslint to ignore.
         'src/**/*.test.ts',
         'dist/**',
         'node_modules/**',
         '.eslintrc.js',
         'src/test/'
-        // List of all the dir which you want eslint to ignore.
     ],
     parser: '@typescript-eslint/parser', // Specifies the ESLint parser
     parserOptions: {
@@ -34,7 +34,7 @@ module.exports = {
         '@typescript-eslint/ban-ts-comment': 'off',
         '@typescript-eslint/no-explicit-any': 2,
         '@typescript-eslint/no-var-requires': 0,
-        // 'consistent-return': 2,
+        'consistent-return': 2,
         'no-console': 2,
 
         /**
