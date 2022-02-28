@@ -27,11 +27,16 @@ Once added, you can use a command like `composer run-script --timeout=0 lint` to
 
 ### `.eslintrc.js`
 If you are building a NodeJS/Typescript project then you should have this file. It helps you better organise the coding structure and streamline all the contributors to follow the same coding pattern and naming convention.  
-It uses two addons namely [eslint-plugin-unused-imports](https://www.npmjs.com/package/eslint-plugin-unused-imports) and [eslint-ts-naming-conventions](https://www.npmjs.com/package/eslint-ts-naming-convention) along with [eslint](https://www.npmjs.com/package/eslint). 
+It uses one addons namely [eslint-plugin-unused-imports](https://www.npmjs.com/package/eslint-plugin-unused-imports) along with [eslint](https://www.npmjs.com/package/eslint). 
 
-In your `package.json` write the following lines under ""
+In your `package.json` write the following lines
 ```json
-
+"scripts": {
+  "lint": "eslint './**/*.{js,ts}' --quiet",
+  "lint:fix": "eslint './**/*.{js,ts}' --quiet --fix",
+  "lint:windows": "eslint ./**/*.{js,ts} --quiet",
+  "lint:windows:fix": "eslint ./**/*.{js,ts} --quiet --fix"
+}
 ```
 Once added, you can use a command like `npm run lint` to check all the linting issues.
 
