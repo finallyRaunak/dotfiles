@@ -41,3 +41,18 @@ In your `package.json` write the following lines
 Once added, you can use a command like `npm run lint` to check all the linting issues.
 
 Please Note: _If you are building an app using ReactJS, etc, then you can also have a `.eslintrc.js` file but the rules might be different. (As I do not belong to that field so, I'm unable to provide the correct rules ATM)_
+
+### `.prettierrc.js`
+
+### `.alias`
+### `.bash_profile`
+### `.bashrc`
+### `.zshrc`
+
+### `.exports`
+### `.functions`
+
+### `.gitconfig`
+### `.gitignore`
+
+### `vscode-settings.json`

@@ -52,3 +52,18 @@ function o() {
 		open "$@";
 	fi;
 }
+
+
+# find shorthand
+function f() {
+    find . -name "$1"
+}
+
+
+# Compare original and gzipped file size
+function gz() {
+	echo "orig size    (bytes): "
+	cat "$1" | wc -c
+	echo "gzipped size (bytes): "
+	gzip -c "$1" | wc -c
+}

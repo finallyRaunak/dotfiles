@@ -36,6 +36,10 @@ Desktop.ini
 .local.env
 .env.backup
 
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
 
 # Thumbnail cache files #
 #########################

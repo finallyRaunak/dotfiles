@@ -2,23 +2,22 @@
 alias g="git"
 alias t="terraform"
 alias k="kubectl"
+alias dc="docker-compose"
 alias rr="rm -rf"
 
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/projects"
 
+alias composer="php /usr/local/bin/composer.phar"
+
+alias reload="source ~/.zshrc"
 
 # List declared aliases, functions, paths
 alias aliases="alias | sed 's/=.*//'"
 alias functions="declare -f | grep '^[a-z].* ()' | sed 's/{$//'"
 alias paths='echo -e ${PATH//:/\\n}'
 
-
-# Directory listing/traversal
-LS_COLORS=$(is-supported "ls --color" --color -G)
-LS_TIMESTYLEISO=$(is-supported "ls --time-style=long-iso" --time-style=long-iso)
-LS_GROUPDIRSFIRST=$(is-supported "ls --group-directories-first" --group-directories-first)
 
 alias l="ls -lahA $LS_COLORS $LS_TIMESTYLEISO $LS_GROUPDIRSFIRST"
 alias ll="ls -lA $LS_COLORS"
@@ -29,12 +28,14 @@ alias lp="stat -c '%a %n' *"
 unset LS_COLORS LS_TIMESTYLEISO LS_GROUPDIRSFIRST
 
 
+# Easier navigation: .., ..., ~ and -
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias -- -="cd -"                  # Go to previous dir with -
 alias cd.='cd $(readlink -f .)'    # Go to real dir (i.e. if current dir is linked)
+alias ~="cd ~"                     # Go to home dir
 
 
 # npm
