@@ -1,13 +1,31 @@
 {
-    "workbench.colorTheme": "One Monokai",
-    "workbench.colorCustomizations": {
-        "[One Monokai]": {}
+    "[json]": {
+        "editor.autoIndent": "full",
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.trimAutoWhitespace": true
     },
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
+    },
+    "[terraform]": {
+        "editor.tabSize": 2,
+        "editor.formatOnSave": true
+    },
+    "breadcrumbs.enabled": false,
+    "editor.bracketPairColorization.enabled": true,
     "editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace",
-    "editor.fontSize": 14,
-    "editor.minimap.enabled": false,
-    "editor.tabSize": 2,
+    "editor.fontSize": 12,
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": true,
     "editor.insertSpaces": false,
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "none",
+    "editor.wordWrap": "on",
+    "emmet.showAbbreviationSuggestions": false,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "extensions.ignoreRecommendations": true,
     "files.exclude": {
         "_site": true,
         "**/.DS_Store": true,
@@ -21,54 +39,46 @@
         "**/node_modules": true
     },
     "files.trimTrailingWhitespace": true,
-    "terminal.integrated.fontSize": 14,
-    "terminal.integrated.fontWeight": "400",
-    "terminal.integrated.fontWeightBold": "500",
-    "terminal.integrated.lineHeight": 1.2,
-    "workbench.iconTheme": "material-icon-theme",
-    "sublimeTextKeymap.promptV3Features": true,
-    "editor.multiCursorModifier": "ctrlCmd",
-    "editor.snippetSuggestions": "top",
-    "editor.formatOnPaste": false,
-    "files.associations": {
-        "*.tmpl": "html",
-        "*.html.erb": "html"
-    },
-    "merge-conflict.codeLens.enabled": false,
-    "merge-conflict.decorators.enabled": false,
-    "debug.javascript.codelens.npmScripts": "never",
-    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
     "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
-    "files.hotExit": "off",
-    "editor.wordWrap": "on",
-    "window.openFoldersInNewWindow": "on",
-    "[markdown]": {
-        "files.trimTrailingWhitespace": false
-    },
-    "[terraform]": {
-        "editor.tabSize": 2,
-        "editor.formatOnSave": true
-    },
-    "emmet.showAbbreviationSuggestions": false,
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
     "javascript.updateImportsOnFileMove.enabled": "never",
+    "json.maxItemsComputed": 1000,
     "search.exclude": {
         "**/docs": true
     },
-    "breadcrumbs.enabled": false,
-    "workbench.editor.showTabs": true,
-    "editor.renderIndentGuides": true,
-    "editor.renderWhitespace": "none",
-    "markdown.extension.toc.updateOnSave": false,
-    "extensions.ignoreRecommendations": true,
-    "explorer.confirmDragAndDrop": false,
-    "[bicep]": {
-        "editor.tabSize": 2,
-        "editor.insertSpaces": true,
-        "files.insertFinalNewline": true,
-        "editor.suggestSelection": "first",
-        "editor.suggest.snippetsPreventQuickSuggestions": false,
-        "editor.suggest.showWords": false
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.fontWeight": "400",
+    "terminal.integrated.fontWeightBold": "500",
+    "terminal.integrated.lineHeight": 1.2,
+    "workbench.colorCustomizations": {
+        "tree.indentGuidesStroke": "#008070",
+        "terminal.background": "#2B2B2B",
+        "terminal.foreground": "#E6E1DC",
+        "terminalCursor.background": "#E6E1DC",
+        "terminalCursor.foreground": "#E6E1DC",
+        "terminal.ansiBlack": "#2B2B2B",
+        "terminal.ansiBlue": "#6D9CBE",
+        "terminal.ansiBrightBlack": "#5A647E",
+        "terminal.ansiBrightBlue": "#6D9CBE",
+        "terminal.ansiBrightCyan": "#519F50",
+        "terminal.ansiBrightGreen": "#A5C261",
+        "terminal.ansiBrightMagenta": "#B6B3EB",
+        "terminal.ansiBrightRed": "#DA4939",
+        "terminal.ansiBrightWhite": "#F9F7F3",
+        "terminal.ansiBrightYellow": "#FFC66D",
+        "terminal.ansiCyan": "#519F50",
+        "terminal.ansiGreen": "#A5C261",
+        "terminal.ansiMagenta": "#B6B3EB",
+        "terminal.ansiRed": "#DA4939",
+        "terminal.ansiWhite": "#E6E1DC",
+        "terminal.ansiYellow": "#FFC66D"
     },
-    "security.workspace.trust.enabled": false,
-    "workbench.startupEditor": "none"
+    "workbench.colorTheme": "GitHub Dark Dimmed",
+    "workbench.editor.showTabs": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.tree.indent": 20,
+    "workbench.tree.renderIndentGuides": "always"
 }

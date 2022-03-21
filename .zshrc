@@ -101,6 +101,11 @@ source $ZSH/oh-my-zsh.sh
 
 # -- Custom Setup -- #
 
+# Load default dotfiles
+if [ -f ~/.bash_profile ]; then
+    . ~/.bash_profile;
+fi
+
 # Setting for the new UTF-8 terminal support in bigger
 # fix perl: warning: Setting locale failed.
 LANGUAGE=en_US.UTF-8
