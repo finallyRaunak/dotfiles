@@ -12,13 +12,18 @@
         "editor.tabSize": 2,
         "editor.formatOnSave": true
     },
+    "[typescript]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": false
+    },
     "breadcrumbs.enabled": false,
     "editor.bracketPairColorization.enabled": true,
     "editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace",
     "editor.fontSize": 12,
     "editor.formatOnPaste": false,
     "editor.formatOnSave": true,
-    "editor.insertSpaces": false,
+    "editor.insertSpaces": true,
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "none",
     "editor.wordWrap": "on",
