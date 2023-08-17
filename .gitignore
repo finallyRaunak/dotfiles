@@ -1,6 +1,6 @@
 # Project Specific #
 ####################
-
+.env
 
 
 # Composer #
@@ -18,6 +18,12 @@ composer.lock
 .cache
 coverage
 nodemon.json
+lib-cov
+lcov.info
+pids
+results
+.node_history
+
 
 # Compiled Python files #
 #########################
@@ -32,19 +38,29 @@ nodemon.json
 ######################
 .DS_Store
 .DS_Store?
+.AppleDouble
+.LSOverride
+Icon
+.Spotlight-V100
 Desktop.ini
 .local.env
 .env.backup
+*.cab
+*.msi
+*.msm
+*.msp
 
 # Files that might appear on external disks
 .Spotlight-V100
 .Trashes
-
+$RECYCLE.BIN/
 
 # Thumbnail cache files #
 #########################
 ._*
 Thumbs.db
+ehthumbs.db
+
 
 
 # IDE #
@@ -73,3 +89,12 @@ nbdist/
 # Ignore all local history of files
 .history
 .ionide
+
+
+# Logs and databases #
+######################
+.tmp
+*.log
+*.sql
+*.sqlite
+*.sqlite3
