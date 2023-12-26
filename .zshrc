@@ -113,11 +113,6 @@ LC_ALL=en_US.UTF-8
 LANG=en_US.UTF-8
 LC_CTYPE=en_US.UTF-8
 
-# Set Spaceship ZSH as a prompt
-autoload -U promptinit; promptinit
-prompt spaceship
-
-
 # -- Spacespace theme -- #
 
 # Make prompt like pure prompt
